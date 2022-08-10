@@ -1,5 +1,4 @@
 import { css, html, LitElement } from "lit";
-import { when } from "lit/directives/when.js";
 import { requestAndEnableWebcam, takeScreenshot } from "../service/webcam-access.js";
 import "./icon-button.js";
 
@@ -60,7 +59,8 @@ export class ImageCamera extends LitElement {
             case IMAGE_STATES.DEFAULT:
                 return html`<img src="https://thumbs.dreamstime.com/b/default-avatar-photo-placeholder-profile-picture-default-avatar-photo-placeholder-profile-picture-eps-file-easy-to-edit-125707135.jpg" />`;
             case IMAGE_STATES.VIDEO_ON:
-                return html`<video autoplay="true" id="video-element">`;
+                return html`<video
+                    autoplay="true" id="video-element">`;
             case IMAGE_STATES.PICTURE_TAKEN:
                 return html`<img src="${this.screenShot}" />`;
         }
@@ -79,6 +79,7 @@ export class ImageCamera extends LitElement {
 
     static styles = css`
         :host {
+            display: flex;
             position: relative;
         }
 
@@ -99,6 +100,7 @@ export class ImageCamera extends LitElement {
 
         img, video {
             width: 400px;
+            border-radius: 8px 0 0 8px ;
         }
     `;
 }
