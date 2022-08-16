@@ -1,0 +1,44 @@
+
+html {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#002fa9, rgba(82, 151, 233, 0.79)), url(https://react-finland.fi/734d8cd920488189bbd23a846a291bf2.svg);
+    background-size: 100% 100%, 33rem 33rem;
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+    width: inherit;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+
+}
+
+h2 {
+    color: #FFF;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background: #FFF;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#root {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
