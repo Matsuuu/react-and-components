@@ -18,9 +18,19 @@ function App() {
 
     function renderDemo() {
         const path = window.location.pathname;
+        console.log(path)
 
         switch(path) {
-
+            case "/properties": return <h3>Properties</h3>
+            case "/change-detection": return <h3> Change detection</h3>
+            case "/expressions": return <h3> Expression</h3>
+            case "/conditional-rendering": return <h3> Conditional Rendering</h3>
+            case "/lists-and-arrays": return <h3> Lists and arrays</h3>
+            case "/nesting": return <h3> Nesting</h3>
+            case "/element-composition": return <h3> Composing elements</h3>
+            case "/part-composition": return <h3> Composing parts</h3>
+            case "/styling": return <h3> Styling components</h3>
+            case "/working-with-shadow-dom": return <h3> Working with shadow dom</h3>
             default:
                 return <></>
         }
