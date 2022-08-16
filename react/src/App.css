@@ -28,11 +28,12 @@ h2 {
 section {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
     height: 80%;
     background: #FFF;
     border-radius: 25px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 #root {
@@ -41,4 +42,9 @@ section {
 
 ul {
     list-style: none;
+}
+
+li, a {
+    color: #262626;
+    margin-bottom: 0.5rem;
 }

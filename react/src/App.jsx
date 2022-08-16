@@ -1,4 +1,14 @@
 import './App.css'
+import React from "react";
+import { Properties } from "./exercises/Properties";
+import { ChangeDetection } from "./exercises/ChangeDetection";
+import { ConditionalRendering } from './exercises/ConditionalRendering';
+import { ListsAndArrays } from './exercises/ListsAndArrays';
+import { Nesting } from './exercises/Nesting';
+import { ElementComposition } from './exercises/ElementComposition';
+import { PartComposition } from './exercises/PartComposition';
+import { Styling } from './exercises/Styling';
+import { WorkingWithShadowDom } from './exercises/WorkingWithShadowDom';
 
 const parts = [
     { href: "/properties", title: "Properties" },
@@ -18,21 +28,19 @@ function App() {
 
     function renderDemo() {
         const path = window.location.pathname;
-        console.log(path)
 
         switch(path) {
-            case "/properties": return <h3>Properties</h3>
-            case "/change-detection": return <h3> Change detection</h3>
+            case "/properties": return <Properties />
+            case "/change-detection": return <ChangeDetection />
             case "/expressions": return <h3> Expression</h3>
-            case "/conditional-rendering": return <h3> Conditional Rendering</h3>
-            case "/lists-and-arrays": return <h3> Lists and arrays</h3>
-            case "/nesting": return <h3> Nesting</h3>
-            case "/element-composition": return <h3> Composing elements</h3>
-            case "/part-composition": return <h3> Composing parts</h3>
-            case "/styling": return <h3> Styling components</h3>
-            case "/working-with-shadow-dom": return <h3> Working with shadow dom</h3>
-            default:
-                return <></>
+            case "/conditional-rendering": return <ConditionalRendering />
+            case "/lists-and-arrays": return <ListsAndArrays />
+            case "/nesting": return <Nesting />
+            case "/element-composition": return <ElementComposition />
+            case "/part-composition": return <PartComposition />
+            case "/styling": return <Styling />
+            case "/working-with-shadow-dom": return <WorkingWithShadowDom />
+            default: return <></>
         }
     }
 
