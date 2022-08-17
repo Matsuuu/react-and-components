@@ -30,7 +30,7 @@ function App() {
         const path = window.location.pathname;
 
         switch(path) {
-            case "/properties": return <Properties />
+            case "/properties": return <Properties name="React Finland" />
             case "/change-detection": return <ChangeDetection />
             case "/expressions": return <h3> Expression</h3>
             case "/conditional-rendering": return <ConditionalRendering />

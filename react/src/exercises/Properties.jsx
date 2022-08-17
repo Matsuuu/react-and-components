@@ -1,3 +1,10 @@
+import React from "react";
+
 export function Properties(props) {
-    return <h3>Properties</h3> 
+    return (
+        <div>
+            <h3>Properties</h3> 
+            <p>Hello, {props.name}</p>
+        </div>
+    )
 }
