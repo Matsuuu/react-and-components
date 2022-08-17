@@ -4,7 +4,6 @@ import { Properties } from "./exercises/Properties";
 import { ChangeDetection } from "./exercises/ChangeDetection";
 import { ConditionalRendering } from './exercises/ConditionalRendering';
 import { ListsAndArrays } from './exercises/ListsAndArrays';
-import { Nesting } from './exercises/Nesting';
 import { ElementComposition } from './exercises/ElementComposition';
 import { PartComposition } from './exercises/PartComposition';
 import { Styling } from './exercises/Styling';
@@ -12,6 +11,7 @@ import { WorkingWithShadowDom } from './exercises/WorkingWithShadowDom';
 import { Expressions } from './exercises/Expressions';
 import { Lifecycle } from './exercises/Lifecycle';
 import { LifecycleClass } from './exercises/LifecycleClass';
+import { BubblingData } from './exercises/BubblingData';
 
 const parts = [
     { href: "/properties", title: "Properties" },
@@ -21,7 +21,7 @@ const parts = [
     { href: "/lifecycle-class", title: "Lifecycle (class)" },
     { href: "/conditional-rendering", title: "Conditional Rendering" },
     { href: "/lists-and-arrays", title: "Lists and arrays" },
-    { href: "/nesting", title: "Nesting" },
+    { href: "/bubbling", title: "Bubbling" },
     { href: "/element-composition", title: "Composing elements" },
     { href: "/part-composition", title: "Composing parts" },
     { href: "/styling", title: "Styling components" },
@@ -42,7 +42,7 @@ function App() {
             case "/lifecycle-class": return <LifecycleClass />
             case "/conditional-rendering": return <ConditionalRendering />
             case "/lists-and-arrays": return <ListsAndArrays />
-            case "/nesting": return <Nesting />
+            case "/bubbling": return <BubblingData />
             case "/element-composition": return <ElementComposition />
             case "/part-composition": return <PartComposition />
             case "/styling": return <Styling />
