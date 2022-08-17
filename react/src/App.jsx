@@ -9,11 +9,16 @@ import { ElementComposition } from './exercises/ElementComposition';
 import { PartComposition } from './exercises/PartComposition';
 import { Styling } from './exercises/Styling';
 import { WorkingWithShadowDom } from './exercises/WorkingWithShadowDom';
+import { Expressions } from './exercises/Expressions';
+import { Lifecycle } from './exercises/Lifecycle';
+import { LifecycleClass } from './exercises/LifecycleClass';
 
 const parts = [
     { href: "/properties", title: "Properties" },
     { href: "/change-detection", title: "Change detection" },
     { href: "/expressions", title: "Expression" },
+    { href: "/lifecycle", title: "Lifecycle" },
+    { href: "/lifecycle-class", title: "Lifecycle (class)" },
     { href: "/conditional-rendering", title: "Conditional Rendering" },
     { href: "/lists-and-arrays", title: "Lists and arrays" },
     { href: "/nesting", title: "Nesting" },
@@ -32,7 +37,9 @@ function App() {
         switch(path) {
             case "/properties": return <Properties name="React Finland" />
             case "/change-detection": return <ChangeDetection />
-            case "/expressions": return <h3> Expression</h3>
+            case "/expressions": return <Expressions />
+            case "/lifecycle": return <Lifecycle />
+            case "/lifecycle-class": return <LifecycleClass />
             case "/conditional-rendering": return <ConditionalRendering />
             case "/lists-and-arrays": return <ListsAndArrays />
             case "/nesting": return <Nesting />
