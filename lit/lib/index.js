@@ -1,12 +1,22 @@
 // @ts-nocheck
 import { html, render } from "lit";
+import "./exercises/bubbling-data.js";
+import "./exercises/change-detection.js";
+import "./exercises/conditional-rendering.js";
+import "./exercises/element-composition.js";
+import "./exercises/life-cycle.js";
+import "./exercises/lists-and-arrays.js";
+import "./exercises/part-composition.js";
+import "./exercises/styling-elements.js";
+import "./exercises/using-expressions.js";
+import "./exercises/using-properties.js";
+import "./exercises/working-with-shadow-dom.js";
 
 const parts = [
     { href: "/properties", title: "Properties" },
     { href: "/change-detection", title: "Change detection" },
     { href: "/expressions", title: "Expression" },
     { href: "/lifecycle", title: "Lifecycle" },
-    { href: "/lifecycle-class", title: "Lifecycle (class)" },
     { href: "/conditional-rendering", title: "Conditional Rendering" },
     { href: "/lists-and-arrays", title: "Lists and arrays" },
     { href: "/bubbling", title: "Bubbling" },
@@ -21,9 +31,10 @@ function renderView() {
     render(html`
       <h2>Web Components Workshop</h2>
 
-        ${renderDemo()}
 
-        <section class="links">
+        <section>
+            ${renderDemo()}
+
             ${renderLinkList()}
         </section>
     `,
@@ -51,9 +62,9 @@ function renderDemo() {
         case "/element-composition":
             return html`<element-composition></element-composition>`;
         case "/part-composition":
-            return html`<part-composition></part-composition`;
+            return html`<part-composition></part-composition>`;
         case "/styling":
-            return html`<styling-elements></styling-elements`;
+            return html`<styling-elements></styling-elements>`;
         case "/working-with-shadow-dom":
             return html`<working-with-shadow-dom></working-with-shadow-dom>`;
         default:
@@ -62,9 +73,6 @@ function renderDemo() {
 }
 
 function renderLinkList() {
-
-    const linkSection = document.querySelector(".links");
-
     return html`
         <ul>
         ${parts.map(part => html`
