@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wds --node-resolve --open --watch"
+    "start": "wds --node-resolve --open --watch --app-index index.html"
   },
   "keywords": [],
   "author": "",
