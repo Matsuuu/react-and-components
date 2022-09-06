@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "checkJs": true,
+    "moduleResolution": "node",
+    "jsx": "react"
+  },
+  "exclude": ["node_modules"]
+}
