@@ -17,6 +17,10 @@ export class LifecycleClass extends React.Component {
         }, 1000);
     }
 
+    componentDidUpdate(previousProps, previousState, snapshot) {
+        console.log("Updated!", { previousProps, previousState, snapshot })
+    }
+
     componentWillUnmount() {
         clearInterval(this.intervalId);
     }
