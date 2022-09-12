@@ -9,6 +9,13 @@ export function BubblingData() {
     );
 }
 
+
+
+
+
+
+
+
 export function WorkshopInfo() {
 
     const [attendants, setAttendants] = useState(0);
@@ -29,6 +36,16 @@ export function WorkshopInfo() {
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
 
 export function WorkshopAttendantManager(props) {
 

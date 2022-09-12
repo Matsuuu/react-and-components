@@ -11,6 +11,10 @@ export function Lifecycle() {
         return () => clearInterval(intervalId);
     }, [])
 
+    useEffect(() => {
+        console.log("Updated!");
+    },)
+
     return (
         <div>
             <h3>Lifecycle</h3>

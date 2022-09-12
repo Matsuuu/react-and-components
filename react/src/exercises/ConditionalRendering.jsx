@@ -28,6 +28,10 @@ export function ConditionalRendering() {
 
             {count > 10 ? <p>Wow, that's over ten!</p> : <></>}
 
+            {count > 10 ? <p>Wow, that's over ten!</p> : ''}
+
+            {count > 10 ? <p>Wow, that's over ten!</p> : undefined}
+
             {renderMessage()}
             
             <button onClick={increment}>Increment</button>
