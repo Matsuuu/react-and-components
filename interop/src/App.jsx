@@ -3,7 +3,7 @@ import './App.css'
 import React from "react";
 import {ElementWithChildSlot} from "react-project/src/exercises/ElementComposition";
 // import "./components/Button.js";
- import {LitReactButton} from "./components/LitReactButton";
+import {LitReactButton} from "./components/LitReactButton";
 
 function App() {
 
