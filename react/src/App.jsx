@@ -24,8 +24,8 @@ const parts = [
     { href: '/bubbling', title: 'Bubbling' },
     { href: '/element-composition', title: 'Composing elements' },
     { href: '/part-composition', title: 'Composing parts' },
-    { href: '/styling', title: 'Styling components' },
     { href: '/working-with-shadow-dom', title: 'Working with shadow dom' },
+    { href: '/styling', title: 'Styling components' },
 ];
 
 function App() {
