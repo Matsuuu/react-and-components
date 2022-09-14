@@ -47,7 +47,7 @@ function renderDemo() {
         case "/properties":
             return html`<using-properties name="React Finland"></using-properties>`;
         case "/change-detection":
-            return html`<change-detection></change-detection>`;
+            return html`<change-detection times-clicked=${50}></change-detection>`;
         case "/expressions":
             return html`<using-expressions></using-expressions>`;
         case "/lifecycle":
@@ -65,7 +65,9 @@ function renderDemo() {
         case "/styling":
             return html`<styling-elements></styling-elements>`;
         case "/working-with-shadow-dom":
-            return html`<working-with-shadow-dom></working-with-shadow-dom>`;
+            return html`<working-with-shadow-dom>
+        <p>Hello!</p>
+        </working-with-shadow-dom>`;
         default:
             return html``
     }
